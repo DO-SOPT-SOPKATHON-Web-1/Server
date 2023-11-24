@@ -27,7 +27,7 @@
 
 <div align=center>
   
-<img width="850" src="https://github.com/DO-SOPT-SOPKATHON-Web-1/Server/assets/81796317/2418ada5-060b-4aa8-a324-2071cea59417">
+<img width="850" src="https://github.com/DO-SOPT-SOPKATHON-Web-1/Server/assets/81796317/445ec4c2-b63d-46e3-8056-5fb5c2085a99">
 
 </div>
 
