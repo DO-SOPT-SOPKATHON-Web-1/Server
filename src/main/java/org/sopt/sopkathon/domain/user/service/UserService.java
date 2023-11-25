@@ -37,7 +37,7 @@ public class UserService {
         return new UserSaveResponse(findUser.getId());
     }
 
-    public void updateFriendEmail(UserFriendUpdateRequest userFriendUpdateRequest) {
+    public void updateFriendInfo(UserFriendUpdateRequest userFriendUpdateRequest) {
         User findUser = findUser(userFriendUpdateRequest);
         String name = findUser.getName();
         String friendName = userFriendUpdateRequest.friendName();
