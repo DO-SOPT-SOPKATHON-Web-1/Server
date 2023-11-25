@@ -21,7 +21,8 @@ public class User {
     @Column(nullable = false)
     private String name;
     private String friendEmail;
-    @OneToMany(mappedBy = "user")
+    private String friendName;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
     @Builder.Default
     private List<Letter> letters = new ArrayList<>();
 
@@ -38,5 +39,13 @@ public class User {
 
     public void removeLetter(Letter letter) {
         letters.remove(letter);
+    }
+
+    public void updateFriendEmail(String friendEmail) {
+        this.friendEmail = friendEmail;
+    }
+
+    public void updateFriendName(String friendName) {
+        this.friendName = friendName;
     }
 }
