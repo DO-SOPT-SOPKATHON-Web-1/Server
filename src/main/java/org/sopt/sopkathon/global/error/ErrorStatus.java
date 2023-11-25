@@ -17,6 +17,7 @@ public enum ErrorStatus {
      * 404 Not Found
      */
     ENTITY_NOT_FOUND(HttpStatus.NOT_FOUND, "대상을 찾을 수 없습니다."),
+    USER_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 케이크 주인입니다."),
 
     /**
      * 405 Method Not Allowed
@@ -27,6 +28,7 @@ public enum ErrorStatus {
      * 409 Conflict
      */
     CONFLICT(HttpStatus.CONFLICT, "이미 존재하는 리소스입니다."),
+    DUPLICATE_USER(HttpStatus.CONFLICT, "이미 존재하는 케이크 주인입니다."),
 
     /**
      * 500 Internal Server Error
