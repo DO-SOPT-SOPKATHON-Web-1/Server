@@ -1,5 +1,11 @@
 #  Sopkathon 🚀
 
+> ## HAPPY DEATH DAY
+> 본인의 죽음이 너무 슬프지 않았으면 하는 사람들을 위한 편지 전송 서비스
+
+## Tech Stack
+Spring Boot
+
 ## Contributors ✨
 | [@SunwoongH](https://github.com/SunwoongH) | [@tkdwns414](https://github.com/tkdwns414) |
 | :---: | :---: |
