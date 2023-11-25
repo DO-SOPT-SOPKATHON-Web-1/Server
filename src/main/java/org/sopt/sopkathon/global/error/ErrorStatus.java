@@ -18,6 +18,7 @@ public enum ErrorStatus {
      */
     ENTITY_NOT_FOUND(HttpStatus.NOT_FOUND, "대상을 찾을 수 없습니다."),
     USER_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 케이크 주인입니다."),
+    LETTER_NOT_FOUND(HttpStatus.NOT_FOUND, "존재하지 않는 편지입니다."),
 
     /**
      * 405 Method Not Allowed
