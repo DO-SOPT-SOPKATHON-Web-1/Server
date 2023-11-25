@@ -33,7 +33,7 @@ public class LetterService {
     public LettersColorResponse getLetterColors(LettersColorRequest request){
         User user = userRepository.findByIdOrThrow(request.userId());
         List<Color> colors = letterRepository.findAllColorsByUser(user);
-        return LettersColorResponse.of(colors.size(), colors);
+        return LettersColorResponse.of(user.getName(), colors.size(), colors);
     }
 
     public LetterDetailResponse getLetter(Long letterId) {
