@@ -45,7 +45,7 @@
 
 <br>
 
-## Tech Stack
+## Tech Stack ✨
 
 - Java 17
 - Spring Boot
@@ -57,6 +57,15 @@
 - Github Action
 - Gmail SMTP
 - Certbot
+
+<br>
+
+## 로컬 실행 방법
+
+1. git clone을 진행한다.
+2. resources 폴더에 application.yml을 추가한다.
+3. cd 명령어를 사용해 build/libs 디렉터리로 이동한다.
+4. java -jar sopkathon-0.0.1-SNAPSHOT.jar 명령어를 실행한다.
 
 <br>
 
