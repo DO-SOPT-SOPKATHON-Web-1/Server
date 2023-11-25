@@ -6,6 +6,8 @@ import org.sopt.sopkathon.global.error.ErrorStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
+    boolean existsByName(String name);
+
     default User findByIdOrThrow(Long userId) {
         return findById(userId)
                 .orElseThrow(() -> new BusinessException(ErrorStatus.USER_NOT_FOUND));

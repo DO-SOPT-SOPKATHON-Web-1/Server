@@ -28,6 +28,7 @@ public enum ErrorStatus {
      * 409 Conflict
      */
     CONFLICT(HttpStatus.CONFLICT, "이미 존재하는 리소스입니다."),
+    DUPLICATE_USER(HttpStatus.CONFLICT, "이미 존재하는 케이크 주인입니다."),
 
     /**
      * 500 Internal Server Error
