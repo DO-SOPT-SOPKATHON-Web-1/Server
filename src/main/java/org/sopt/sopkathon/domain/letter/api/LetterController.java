@@ -36,4 +36,9 @@ public class LetterController {
         return ApiResponse.success(SuccessStatus.OK, response);
     }
 
+    @PostMapping("/sprinkle")
+    public ResponseEntity<ApiResponse<?>> sprinkleLetter(@RequestBody LettersColorRequest request){
+        letterService.sprinkleLetter(request);
+        return ApiResponse.success(SuccessStatus.OK);
+    }
 }
