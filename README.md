@@ -1,16 +1,12 @@
 #  Sopkathon 🚀
 
 > ## HAPPY DEATH DAY
-> 본인의 죽음이 너무 슬프지 않았으면 하는 사람들을 위한 편지 전송 서비스
-
-## Tech Stack
-Spring Boot
+> HDD(Happy Death Day)는 당신이 사랑하는 이들의 죽음에 슬퍼하는 대신 당신을 행복하게 추억할 수 있도록 미리 보내두는 편지 서비스입니다.
 
 ## Contributors ✨
 | [@SunwoongH](https://github.com/SunwoongH) | [@tkdwns414](https://github.com/tkdwns414) |
 | :---: | :---: |
-||
-||
+|케이크(유저, 대리인) 도메인 API|편지 도메인 API|
 
 <br>
 
@@ -46,6 +42,21 @@ Spring Boot
 <img width="850" src="https://github.com/DO-SOPT-SOPKATHON-Web-1/Server/assets/81796317/31a27b15-0c62-4c89-94ed-07c4e5a0d4eb">
 
 </div>
+
+<br>
+
+## Tech Stack
+
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- AWS EC2
+- AWS RDS
+- Nginx
+- Docker
+- Github Action
+- Gmail SMTP
+- Certbot
 
 <br>
 
