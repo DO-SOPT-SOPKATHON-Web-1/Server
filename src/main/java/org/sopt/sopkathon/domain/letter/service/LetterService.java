@@ -5,6 +5,7 @@ import org.sopt.sopkathon.domain.letter.domain.Color;
 import org.sopt.sopkathon.domain.letter.domain.Letter;
 import org.sopt.sopkathon.domain.letter.dto.request.LetterCreateRequest;
 import org.sopt.sopkathon.domain.letter.dto.request.LettersColorRequest;
+import org.sopt.sopkathon.domain.letter.dto.response.LetterDetailResponse;
 import org.sopt.sopkathon.domain.letter.dto.response.LettersColorResponse;
 import org.sopt.sopkathon.domain.letter.repository.LetterRepository;
 import org.sopt.sopkathon.domain.user.domain.User;
@@ -35,4 +36,10 @@ public class LetterService {
         return LettersColorResponse.of(colors.size(), colors);
     }
 
+    public LetterDetailResponse getLetter(Long letterId) {
+        Letter letter = letterRepository.findByIdOrThrow(letterId);
+        User user = userRepository.findByIdOrThrow(letter.getUser().getId());
+        return LetterDetailResponse.of(
+                letter.getName(), letter.getColor(), letter.getContent(), user.getName());
+    }
 }
