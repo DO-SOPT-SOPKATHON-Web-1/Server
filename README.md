@@ -36,6 +36,8 @@
 ## ERD ✨
 
 <div align=center>
+  
+<img width="850" src="https://github.com/DO-SOPT-SOPKATHON-Web-1/Server/assets/81796317/31a27b15-0c62-4c89-94ed-07c4e5a0d4eb">
 
 </div>
 
