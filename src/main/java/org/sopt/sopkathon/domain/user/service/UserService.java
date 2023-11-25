@@ -25,6 +25,11 @@ public class UserService {
         return new UserSaveResponse(savedUser.getId());
     }
 
+    public UserSaveResponse getUserId(UserSaveRequest userSaveRequest) {
+        User findUser = userRepository.findByNameOrThrow(userSaveRequest.name());
+        return new UserSaveResponse(findUser.getId());
+    }
+
     private void validateDuplicateUser(UserSaveRequest userSaveRequest) {
         if (userRepository.existsByName(userSaveRequest.name())) {
             throw new BusinessException(ErrorStatus.DUPLICATE_USER);

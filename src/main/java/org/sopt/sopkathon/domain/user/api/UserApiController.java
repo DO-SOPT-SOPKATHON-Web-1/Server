@@ -23,4 +23,10 @@ public class UserApiController {
         final UserSaveResponse userSaveResponse = userService.saveUser(userSaveRequest);
         return ApiResponse.success(SuccessStatus.CREATED, userSaveResponse);
     }
+
+    @PostMapping("/identity")
+    public ResponseEntity<ApiResponse<?>> getUserId(@RequestBody final UserSaveRequest userSaveRequest) {
+        UserSaveResponse userSaveResponse = userService.getUserId(userSaveRequest);
+        return ApiResponse.success(SuccessStatus.CREATED, userSaveResponse);
+    }
 }
